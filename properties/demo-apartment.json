@@ -1,0 +1,119 @@
+{
+  "id": "demo-apartment",
+  "access_token": "684dde12bfbd6fbe27036dac639c00272cabe439188e8cf2",
+  "name": "Apartament Floreasca",
+  "address": "Str. Exemplu 12, et. 3, ap. 14, Sector 1, București. The building entrance is the blue door next to the pharmacy.",
+  "coordinates": {
+    "lat": 44.465,
+    "lng": 26.0995
+  },
+  "host": {
+    "name": "Andrei",
+    "phone": "+40 734207677",
+    "languages": [
+      "Romanian",
+      "English"
+    ],
+    "reply_time": "usually within 30 minutes, 08:00–23:00",
+    "telegram_chat_id": "5723460911"
+  },
+  "emergency": {
+    "gas_company": "Distrigaz Sud emergencies: 0800 800 900"
+  },
+  "current_stay": {
+    "checkin_date": null,
+    "checkout_date": null
+  },
+  "stay": {
+    "check_in": "from 15:00",
+    "check_out": "by 11:00",
+    "late_check_out": "sometimes possible until 13:00 — ask the host the evening before",
+    "luggage": "no storage after check-out, but the host can sometimes hold bags for a few hours if asked in advance"
+  },
+  "access": {
+    "wifi": {
+      "ssid": "Floreasca_Guest",
+      "password": "welcome-2026"
+    },
+    "building_entry": "interphone code 14# then wait for the buzz, or ring 14",
+    "door_code": "key box on the left of the door, code 4471, put the key back in the box when you leave"
+  },
+  "appliances": [
+    {
+      "name": "Induction hob",
+      "instructions": "Touch the power symbol bottom-left for two seconds. Then tap a zone and use + / – for heat. It only works with the pans in the cupboard under the sink; the glass ones won't heat. It switches itself off if you leave a zone on with no pan.",
+      "video_url": "https://youtu.be/REPLACE_unlisted_video_id"
+    },
+    {
+      "name": "Washing machine",
+      "instructions": "Detergent is in the drawer above it. Use the 'Mix 40°' program, it takes about one hour. Don't use the 90° program, it's very loud for the neighbours.",
+      "video_url": null
+    },
+    {
+      "name": "Hot water",
+      "instructions": "There is a boiler inside the hallway cupboard and you turn the lever and push the button to turn it on",
+      "video_url": "https://www.youtube.com/watch?v=WyPFXhpddmc"
+    },
+    {
+      "name": "Air conditioning",
+      "instructions": "Remote is on the hallway shelf. Press ON, the snowflake for cooling, sun for heating. Please switch it off when you go out."
+    }
+  ],
+  "house_rules": [
+    "Quiet hours 22:00–08:00 — the building is mostly families.",
+    "No smoking inside. The balcony is fine.",
+    "No parties or extra overnight guests beyond the booking.",
+    "Please take shoes off at the door."
+  ],
+  "waste": "Bins are in the yard behind the building, through the door at the end of the ground-floor corridor. Blue for paper and plastic, black for everything else. Glass goes in the green bin on the street corner.",
+  "parking": "Free street parking on Str. Exemplu after 18:00 and all day Sunday. On weekdays 08:00–18:00 it's paid via the Amparcare app, about 5 lei per hour. Don't park in front of the pharmacy — they call the tow truck.",
+  "transport": [
+    "Metro: Aurel Vlaicu station is an 8-minute walk. Line M2 goes straight to Piața Unirii and Universitate.",
+    "Airport: Bus 100 from Piața Charles de Gaulle runs every 15 minutes, about 40 minutes to Otopeni. Or Bolt / Uber, around 60–80 lei.",
+    "Taxis: use Bolt or Uber. Avoid hailing on the street near the airport."
+  ],
+  "neighborhood": [
+    {
+      "name": "Mega Image",
+      "type": "supermarket",
+      "distance": "2 min walk",
+      "note": "open until 23:00, on the corner"
+    },
+    {
+      "name": "Origo",
+      "type": "coffee",
+      "distance": "10 min walk",
+      "note": "best coffee nearby, busy on weekend mornings"
+    },
+    {
+      "name": "Caru' cu Bere",
+      "type": "restaurant",
+      "distance": "metro to Universitate",
+      "note": "classic Romanian food in the old town, touristy but good; book ahead on weekends"
+    },
+    {
+      "name": "Farmacia Tei",
+      "type": "pharmacy",
+      "distance": "next door",
+      "note": "open 24 hours"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Where are the extra towels?",
+      "a": "Top shelf of the bathroom cupboard."
+    },
+    {
+      "q": "Is there an iron?",
+      "a": "Yes, in the wardrobe in the bedroom, with the ironing board."
+    },
+    {
+      "q": "Can I get a taxi to the airport at 5am?",
+      "a": "Bolt works at that hour. Book it 15 minutes before; pickups are quick in Floreasca."
+    }
+  ],
+  "limits": {
+    "monthly_tokens": 500000,
+    "session_messages_per_day": 40
+  }
+}
