@@ -1,0 +1,11 @@
+[Unit]
+Description=Cloudflare quick tunnel for Alfred (temporary URL, changes on restart)
+After=network-online.target alfred.service
+
+[Service]
+ExecStart=/usr/bin/cloudflared tunnel --no-autoupdate --url http://127.0.0.1:8000
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

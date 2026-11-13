@@ -47,7 +47,7 @@ def escalate(prop, reason, summary, session_id):
     })
     prefix = "🚨 SAFETY — " if reason == "safety" else ""
     sent = _telegram(
-        prop["host"].get("telegram_chat_id"),
+        prop["host"].get("telegram_chat_id") or config.ALERT_CHAT_ID,
         f"{prefix}Alfred @ {prop['name']}\n[{reason}] {summary}",
     )
     return {"delivered_to_host": sent, "host_phone": prop["host"]["phone"]}

@@ -25,7 +25,7 @@ LIFE_THREATENING = [
     "arde", "miros de ars", "monoxid", "nu pot respira", "nu respira",
     "sange", "sangereaza", "lesinat", "inconstient", "ranit", "ranita",
     "electrocutat", "curentat", "scantei", "durere in piept", "infarct",
-    "ambulanta", "salvare", "se ineaca", "supradoza", "explozie", "urgenta"
+    "ambulanta", "salvare", "se ineaca", "supradoza", "explozie", "urgenta",
     "gaza", "gaze", "miroase a gaz", "miroase a gaza", "sangerez", "sangerezi",
     "sangerare", "am cazut", "a cazut", "m-am lovit", "m-am ranit", "ma doare rau",
 ]

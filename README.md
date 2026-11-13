@@ -39,3 +39,24 @@ NFC tag (NTAG215)  →  redirect URL  →  web app on phone  →  backend  →  
 **Multi-tenant by design.** Every query is filtered by property ID at the query layer, so one apartment's data can't leak into another's.
 
 ##
+
+## Running it (home server)
+
+```bash
+git clone https://github.com/Dubrovnich/alfred.git ~/alfred && cd ~/alfred
+python3.13 -m venv .venv && .venv/bin/pip install -r requirements.txt
+cp .env.example .env && nano .env      # pick Claude or the free Gemini tier, add the key
+./update.sh                            # installs and starts the service, prints /healthz
+```
+
+Alfred listens on 127.0.0.1:8000 only. To reach it from phones, put a Cloudflare Tunnel in
+front (no open ports on the router). `deploy/tunnel.service` runs a free quick tunnel whose
+`trycloudflare.com` URL changes on every restart: fine for demos. For tags in real
+apartments, use a named tunnel on your own domain so the URL never changes.
+
+Real properties go in `properties/` on the server only; the repo ignores every property file
+except the demo. Each needs an `access_token` of 24+ random characters:
+`python3 -c "import secrets; print(secrets.token_hex(24))"`.
+
+Escalations and unanswered questions are written to `data/` and, if `TELEGRAM_BOT_TOKEN` is
+set, pushed to the host's Telegram (`host.telegram_chat_id`, or `ALFRED_ALERT_CHAT_ID`).

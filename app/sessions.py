@@ -29,8 +29,12 @@ _usage = _load_usage()
 
 
 def _save_usage():
-    with open(_usage_path, "w", encoding="utf-8") as f:
+    # write-then-rename: a crash mid-write leaves the old file, not an empty one,
+    # and an empty file would reset every property's monthly spend to zero
+    tmp = _usage_path.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(_usage, f, indent=2)
+    tmp.replace(_usage_path)
 
 
 def _month_key():

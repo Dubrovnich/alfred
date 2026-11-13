@@ -1,0 +1,13 @@
+[Unit]
+Description=Alfred (guest assistant)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/alfred
+# one worker on purpose: sessions and the monthly spend counter live in this process
+ExecStart=%h/alfred/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
